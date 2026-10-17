@@ -90,16 +90,4 @@ Ollama no usa LoRA tradicional, pero permite crear modelos personalizados con un
 - **Ajuste**: Modelfile de Ollama con ejemplos few-shot.
 - **Evaluación**: pruebas en `tests/`.
 
-## Entrega en GitHub
 
-```powershell
-git init
-git add .
-git commit -m "Entrega Hackathon 1: Asistente con Ollama"
-git branch -M main
-git remote add origin https://github.com/stroncoso2010/devf.git
-git push -u origin main
-```
-
-Luego entrega la URL del repositorio en el campus de DevF:
-`https://edu.devf.la/campus/program/module/ia-aplicada-con-modelos-abiertos/asistente-inteligente-con-llama/project/hackathon-1`
