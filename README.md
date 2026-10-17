@@ -65,7 +65,7 @@ O usa el script incluido:
 
 ### 4. Ejecutar pruebas
 ```powershell
-pytest tests\test_assistant.py
+pytest tests\test_challenge_cientifico.py
 ```
 
 ## Ajuste del modelo con Modelfile

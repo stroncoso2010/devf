@@ -40,7 +40,7 @@ def embed_model():
 # ---------------------------------------------------------------------------
 
 def test_prompt_clasificacion_zero_shot(cliente):
-    """Clasificar un texto científico sin ejemplos previos."""
+    """Clasificar un enunciado científico sin ejemplos previos."""
     prompt = (
         "Clasifica el siguiente enunciado en una de estas categorías: "
         "BIOLOGÍA, QUÍMICA, FÍSICA.\n\n"
@@ -58,7 +58,7 @@ def test_prompt_clasificacion_zero_shot(cliente):
 # ---------------------------------------------------------------------------
 
 def test_prompt_clasificacion_few_shot(cliente):
-    """Clasificar un texto científico con ejemplos (few-shot)."""
+    """Clasificar un enunciado científico con ejemplos (few-shot)."""
     prompt = (
         "Clasifica el enunciado en BIOLOGÍA, QUÍMICA o FÍSICA.\n\n"
         "Ejemplo 1: El corazón bombea sangre a todo el cuerpo. -> BIOLOGÍA\n"

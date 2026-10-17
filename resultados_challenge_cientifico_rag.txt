@@ -62,12 +62,13 @@ Se requiere capacitación, equipo de protección personal (EPP), y seguir protoc
 Respuesta: Equipo de protección personal (EPP), señalización de peligro, área de trabajo designada, instrucciones de seguridad, y equipo de emergencia.
 
 --- CHAIN-OF-THOUGHT ---
-Razonamiento: Para manipular reactivos químicos peligrosos, se requiere una serie de medidas de seguridad que incluyen:
+Aquí tienes el razonamiento paso a paso y la respuesta en español:
 
-1.  **Evaluación de Riesgos:** Identificar los peligros específicos del reactivo y el proceso.
-2.  **Equipo de Protección Personal (EPP):** Usar guantes, gafas de seguridad, protección para los ojos, ropa protectora y, en algunos casos, respiradores.
-3.  **Ventilación Adecuada:** Asegurar una ventilación adecuada para evitar la inhalación de vapores o gases.
-4.  **Cont
+**Razonamiento:**
+
+1. **Identificación de peligros:**  Primero, debemos identificar los peligros específicos asociados con los reactivos químicos que se van a manipular. Esto incluye su toxicidad, inflamabilidad, corrosividad, reactividad con otros materiales, etc.
+2. **Evaluación de riesgos:**  Una vez identificados los peligros, evaluamos la probabilidad de que ocurran y la gravedad de las consecuencias si ocurre un accidente.
+3. **Medidas de seguridad:**  Basándonos en la
 
 --- RAG ---
 El uso de reactivos químicos peligrosos debe estar autorizado por el responsable de seguridad.
