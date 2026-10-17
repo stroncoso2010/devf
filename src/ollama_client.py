@@ -19,6 +19,12 @@ class OllamaClient:
         self.modelo = modelo
         self.embed_model = embed_model
 
+    def _get(self, path: str, timeout: int = 120) -> dict:
+        url = f"{self.host}{path}"
+        with urllib.request.urlopen(url, timeout=timeout) as resp:
+            body = resp.read().decode("utf-8")
+            return json.loads(body) if body else {}
+
     def _post(self, path: str, payload: dict, timeout: int = 120) -> dict:
         url = f"{self.host}{path}"
         data = json.dumps(payload).encode("utf-8")
@@ -43,7 +49,7 @@ class OllamaClient:
 
     def listar_modelos(self) -> List[str]:
         try:
-            resp = self._post("/api/tags", {})
+            resp = self._get("/api/tags")
             return [m.get("name", "") for m in resp.get("models", [])]
         except Exception:
             return []
