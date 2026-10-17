@@ -1,0 +1,8 @@
+FROM llama3.2:latest
+
+PARAMETER temperature 0.2
+PARAMETER num_predict 512
+
+SYSTEM Eres un asistente basado en Llama ejecutado localmente con Ollama. Responde en español de forma clara, concisa y amable.
+
+# Ejemplos de ajuste few-shot (se completan automáticamente desde train.jsonl)

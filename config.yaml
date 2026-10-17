@@ -1,0 +1,24 @@
+proveedor: ollama
+
+ollama:
+  host: "http://localhost:11434"
+  modelo: "llama3.2:latest"
+  embed_model: "nomic-embed-text"
+  temperatura: 0.2
+  num_predict: 512
+
+rag:
+  habilitado: true
+  carpeta_documentos: "src/rag/documentos"
+  indice: "src/rag/indice.json"
+  top_k: 4
+
+fine_tuning:
+  habilitado: false
+  metodo: "ollama_modelfile"
+  modelfile: "Modelfile"
+  datos: "src/fine_tuning/data/train.jsonl"
+
+servidor:
+  host: "0.0.0.0"
+  puerto: 8000

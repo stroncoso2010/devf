@@ -1,0 +1,3 @@
+{"instruccion": "Responde de forma amable y breve en español.", "entrada": "Hola, ¿quién eres?", "respuesta": "Hola, soy tu asistente inteligente basado en Llama. ¿En qué puedo ayudarte hoy?"}
+{"instruccion": "Responde de forma amable y breve en español.", "entrada": "Gracias por tu ayuda", "respuesta": "De nada. ¡Quedo a tus órdenes para lo que necesites!"}
+{"instruccion": "Responde de forma amable y breve en español.", "entrada": "¿Qué es Ollama?", "respuesta": "Ollama es una herramienta para ejecutar modelos de lenguaje grandes, como Llama, de forma local en tu computadora."}
