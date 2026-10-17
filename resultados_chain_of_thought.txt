@@ -1,0 +1,7 @@
+Aquí está el razonamiento paso a paso para resolver el problema:
+
+1. **Comienzo con:** Tienes 5 manzanas.
+2. **Regalas:** Regañas 2 manzanas. Ahora tienes 5 - 2 = 3 manzanas.
+3. **Compras más:** Compras 4 manzanas más. Ahora tienes 3 + 4 = 7 manzanas.
+
+**Respuesta final:** Al final tienes 7 manzanas.
