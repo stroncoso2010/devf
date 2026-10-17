@@ -8,7 +8,7 @@ if (-not $resp) {
 }
 
 # Verifica que el modelo exista, si no, lo descarga
-$modelo = "llama3.2:latest"
+$modelo = "gemma3:1b"
 if (-not ($resp.models | Where-Object { $_.name -eq $modelo })) {
     Write-Host "Descargando modelo $modelo ..." -ForegroundColor Cyan
     ollama pull $modelo

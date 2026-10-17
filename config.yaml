@@ -2,8 +2,8 @@ proveedor: ollama
 
 ollama:
   host: "http://localhost:11434"
-  modelo: "llama3.2:latest"
-  embed_model: "nomic-embed-text"
+  modelo: "gemma3:1b"
+  embed_model: "bge-m3:latest"
   temperatura: 0.2
   num_predict: 512
 
