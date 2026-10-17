@@ -1,7 +1,9 @@
 Aquí está el razonamiento paso a paso para resolver el problema:
 
-1. **Comienzo con:** Tienes 5 manzanas.
-2. **Regalas:** Regañas 2 manzanas. Ahora tienes 5 - 2 = 3 manzanas.
-3. **Compras más:** Compras 4 manzanas más. Ahora tienes 3 + 4 = 7 manzanas.
+1. **Entendemos la fotosíntesis:** La fotosíntesis es el proceso por el cual las plantas convierten la luz solar en energía química, que se almacena en forma de glucosa.
 
-**Respuesta final:** Al final tienes 7 manzanas.
+2. **Muestra de glucosa:** La planta produce 6 moléculas de glucosa.
+
+3. **Determina el número de átomos de carbono por molécula de glucosa:** Cada molécula de glucosa contiene 6 átomos de carbono.
+
+4. **Calcula el número total de átomos de carbono:**  Dado que hay 6 moléculas de glucosa, y cada molécula contiene 6 átomos de carbono, el total de átomos de carbono es
