@@ -1,0 +1,39 @@
+
+======================================================================
+  ENTORNO ACTIVO
+  Webhook del asistente : http://127.0.0.1:8000/webhook
+  Servidor local de Meta     : http://127.0.0.1:8899
+  Modelo Ollama         : qwen3.5:0.8b (http://127.0.0.1:11434)
+  Ctrl+C para detener
+======================================================================
+
+[ASISTENTE] arrancando en http://127.0.0.1:8000
+[SERVIDOR-META] arrancando en http://127.0.0.1:8899
+INFO:     127.0.0.1:59818 - "POST /admin/reiniciar HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59819 - "DELETE /mensajes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59821 - "GET /estado HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59820 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59823 - "GET /webhook?hub.mode=subscribe&hub.verify_token=HANDS_ON_2026&hub.challenge=CHALLENGE_12345 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59824 - "POST /webhook HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59825 - "POST /v19.0/LOCAL_1234567890/messages HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:59826 - "GET /mensajes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59827 - "GET /bitacora HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59828 - "POST /webhook HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59829 - "POST /v19.0/LOCAL_1234567890/messages HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:59830 - "GET /mensajes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59831 - "GET /bitacora HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59832 - "POST /webhook HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59833 - "POST /v19.0/LOCAL_1234567890/messages HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:59834 - "GET /mensajes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59835 - "GET /bitacora HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59836 - "POST /webhook HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59837 - "POST /v19.0/LOCAL_1234567890/messages HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:59838 - "GET /mensajes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59839 - "GET /bitacora HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59840 - "POST /webhook HTTP/1.1" 200 OK
+[SERVIDOR-META] -> 5215512345678: ¡Sí, puedes realizar tu pedido directamente desde tu navegador! Solo tienes que selecciona
+INFO:     127.0.0.1:59846 - "POST /v19.0/LOCAL_1234567890/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59847 - "GET /mensajes HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59848 - "GET /bitacora HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59849 - "GET /stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59850 - "GET /mensajes HTTP/1.1" 200 OK

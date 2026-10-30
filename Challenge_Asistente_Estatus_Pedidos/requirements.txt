@@ -1,0 +1,6 @@
+# Dependencias - Challenge: Asistente de Estatus de Pedidos
+fastapi>=0.110
+uvicorn[standard]>=0.27
+requests>=2.31
+pyngrok>=7.1
+python-dotenv>=1.0

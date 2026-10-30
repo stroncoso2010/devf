@@ -1,0 +1,39 @@
+{
+  "servidor": {
+    "host": "127.0.0.1",
+    "puerto": 8000,
+    "titulo": "Challenge: Asistente de Estatus de Pedidos"
+  },
+  "servidor_meta": {
+    "host": "127.0.0.1",
+    "puerto": 8899,
+    "graph_api_version": "v19.0"
+  },
+  "ollama": {
+    "url": "http://127.0.0.1:11434",
+    "modelo": "qwen3.5:0.8b",
+    "modelos_alternativos": [
+      "gemma4:12b",
+      "granite4.2:8b",
+      "gpt-oss:20b",
+      "gemma3:1b"
+    ],
+    "num_predict": 320,
+    "temperature": 0.3,
+    "think": false,
+    "timeout_segundos": 45
+  },
+  "whatsapp": {
+    "token": "",
+    "phone_id": "LOCAL_1234567890",
+    "verify_token": "HANDS_ON_2026",
+    "graph_api_base": "http://127.0.0.1:8899",
+    "modo": "local"
+  },
+  "asistente": {
+    "saludo_bienvenida": "¡Hola! 👋 Bienvenido/a al Asistente de Estatus de Pedidos. Soy tu asistente virtual y te ayudo a consultar el estado de tus compras. Dime el número de pedido (ejemplo: PED-1001) y te doy la información al instante. 🌎",
+    "max_lineas": 3,
+    "idioma": "es",
+    "sin_folio": "Claro, con gusto te ayudo. 📦 ¿Me compartes el número de pedido? Se ve algo como PED-1001."
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "fecha": "2026-10-30 13:22:21",
+  "duracion_total_ms": 1022,
+  "pasos": 8,
+  "mensajes_entrantes": 5,
+  "respuestas_generadas": 5,
+  "modelo_ollama": "qwen3.5:0.8b",
+  "url_ollama": "http://127.0.0.1:11434",
+  "usuarios_conocidos": 2,
+  "servidor": "http://127.0.0.1:8000",
+  "servidor_meta": "http://127.0.0.1:8899"
+}

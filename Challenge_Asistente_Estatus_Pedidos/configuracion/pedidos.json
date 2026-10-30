@@ -1,0 +1,55 @@
+{
+  "pedidos": [
+    {
+      "folio": "PED-1001",
+      "producto": "Audífonos Bluetooth In Ear Pro",
+      "cantidad": 1,
+      "estado": "En preparación",
+      "fecha_pedido": "2026-10-25",
+      "fecha_estimada_entrega": "2026-10-31",
+      "rastreo": "MX-TRACK-889201",
+      "transportista": "Envíos Andes"
+    },
+    {
+      "folio": "PED-1002",
+      "producto": "Mochila urbana waterproof 30L",
+      "cantidad": 2,
+      "estado": "En camino",
+      "fecha_pedido": "2026-10-20",
+      "fecha_estimada_entrega": "2026-10-30",
+      "rastreo": "MX-TRACK-771044",
+      "transportista": "Envíos Andes"
+    },
+    {
+      "folio": "PED-1003",
+      "producto": "Cafetera de goteo 1.2 L",
+      "cantidad": 1,
+      "estado": "Entregado",
+      "fecha_pedido": "2026-10-10",
+      "fecha_estimada_entrega": "2026-10-18",
+      "rastreo": "MX-TRACK-550912",
+      "transportista": "Correos del Norte"
+    },
+    {
+      "folio": "PED-1004",
+      "producto": "Lámpara de escritorio LED regulable",
+      "cantidad": 1,
+      "estado": "En preparación",
+      "fecha_pedido": "2026-10-28",
+      "fecha_estimada_entrega": "2026-11-04",
+      "rastreo": "Pendiente de asignación",
+      "transportista": "Por definir"
+    },
+    {
+      "folio": "PED-1005",
+      "producto": "Set de utensils de cocina acero inoxidable (8 piezas)",
+      "cantidad": 1,
+      "estado": "Cancelado",
+      "fecha_pedido": "2026-10-22",
+      "fecha_estimada_entrega": null,
+      "rastreo": "Sin rastreo",
+      "transportista": "No aplica",
+      "motivo_cancelacion": "El cliente solicitó la cancelación dentro del plazo permitido."
+    }
+  ]
+}

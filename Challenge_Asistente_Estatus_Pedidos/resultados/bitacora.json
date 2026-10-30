@@ -1,0 +1,144 @@
+[
+  {
+    "paso": "1. Health check",
+    "resultado": {
+      "servidor": "activo",
+      "modo_whatsapp": "local",
+      "servidor_meta": true,
+      "ollama": {
+        "disponible": true,
+        "modelo": "qwen3.5:0.8b",
+        "url": "http://127.0.0.1:11434"
+      }
+    }
+  },
+  {
+    "paso": "2. Verificacion del webhook (GET)",
+    "resultado": {
+      "http": 200,
+      "cuerpo": "CHALLENGE_12345",
+      "correcto": true
+    }
+  },
+  {
+    "paso": "3. Usuario nuevo saluda",
+    "entrada": {
+      "telefono": "5215512345678",
+      "texto": "Hola, buenas tardes",
+      "http_webhook": 200,
+      "respuesta_webhook": {
+        "status": "received"
+      },
+      "ms_respuesta_webhook": 7
+    },
+    "salida": {
+      "id": "wamid.096be73e04594640beccf8ac",
+      "version_api": "v19.0",
+      "phone_id": "LOCAL_1234567890",
+      "para": "5215512345678",
+      "tipo": "text",
+      "cuerpo": "¡Hola! 👋 Bienvenido/a al Asistente de Estatus de Pedidos. Soy tu asistente virtual y te ayudo a consultar el estado de tus compras. Dime el número de pedido (ejemplo: PED-1001) y te doy la información al instante. 🌎",
+      "timestamp": "2026-10-30 13:22:20"
+    }
+  },
+  {
+    "paso": "4. Usuario conocido pide estatus con folio",
+    "entrada": {
+      "telefono": "5215512345678",
+      "texto": "¿Cuál es el estatus de mi pedido PED-1002?",
+      "http_webhook": 200,
+      "respuesta_webhook": {
+        "status": "received"
+      },
+      "ms_respuesta_webhook": 4
+    },
+    "salida": {
+      "id": "wamid.0b3174e4bc73443a8078bcb6",
+      "version_api": "v19.0",
+      "phone_id": "LOCAL_1234567890",
+      "para": "5215512345678",
+      "tipo": "text",
+      "cuerpo": "📦 *PED-1002* — Mochila urbana waterproof 30L (x2)\nEstado: *En camino*\nEntrega estimada: 2026-10-30\nRastreo: MX-TRACK-771044 (Envíos Andes)\n¿Necesitas algo más sobre este pedido?",
+      "timestamp": "2026-10-30 13:22:20"
+    }
+  },
+  {
+    "paso": "5. Pregunta sin folio (LLM)",
+    "entrada": {
+      "telefono": "5215512345678",
+      "texto": "Oye, ¿ya llegó mi compra?",
+      "http_webhook": 200,
+      "respuesta_webhook": {
+        "status": "received"
+      },
+      "ms_respuesta_webhook": 3
+    },
+    "salida": {
+      "id": "wamid.13fe31d72f1a489c82618098",
+      "version_api": "v19.0",
+      "phone_id": "LOCAL_1234567890",
+      "para": "5215512345678",
+      "tipo": "text",
+      "cuerpo": "Claro, con gusto te ayudo. 📦 ¿Me compartes el número de pedido? Se ve algo como PED-1001.",
+      "timestamp": "2026-10-30 13:22:20"
+    }
+  },
+  {
+    "paso": "6. Pedido inexistente",
+    "entrada": {
+      "telefono": "5215599998888",
+      "texto": "Revisa el pedido PED-9999 por favor",
+      "http_webhook": 200,
+      "respuesta_webhook": {
+        "status": "received"
+      },
+      "ms_respuesta_webhook": 4
+    },
+    "salida": {
+      "id": "wamid.dc77646299314279a180e08f",
+      "version_api": "v19.0",
+      "phone_id": "LOCAL_1234567890",
+      "para": "5215599998888",
+      "tipo": "text",
+      "cuerpo": "No encuentro el pedido *PED-9999* en el sistema. 🤔 Revisa el número e inténtalo de nuevo, o escríbeme para ayuda.",
+      "timestamp": "2026-10-30 13:22:20"
+    }
+  },
+  {
+    "paso": "7. Conversacion general (LLM, tono controlado)",
+    "entrada": {
+      "telefono": "5215512345678",
+      "texto": "¿Puedo comprar sin pasar a la tienda?",
+      "http_webhook": 200,
+      "respuesta_webhook": {
+        "status": "received"
+      },
+      "ms_respuesta_webhook": 961
+    },
+    "salida": {
+      "id": "wamid.dcba0c28417e41a38f6a9179",
+      "version_api": "v19.0",
+      "phone_id": "LOCAL_1234567890",
+      "para": "5215512345678",
+      "tipo": "text",
+      "cuerpo": "¡Sí, puedes realizar tu pedido directamente desde tu navegador! Solo tienes que seleccionar los productos y pagar con tarjeta o efectivo. 🛒✨",
+      "timestamp": "2026-10-30 13:22:21"
+    }
+  },
+  {
+    "paso": "8. Estadisticas finales",
+    "resultado": {
+      "usuarios_conocidos": 2,
+      "mensajes_recibidos": 5,
+      "pedidos_en_catalogo": 5,
+      "modelo_ollama": "qwen3.5:0.8b",
+      "ultima_metrica_llm": {
+        "modelo": "qwen3.5:0.8b",
+        "duracion_ms": 956,
+        "chars_respuesta": 140,
+        "chars_thinking": 0,
+        "error": ""
+      }
+    }
+  }
+]

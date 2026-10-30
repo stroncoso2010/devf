@@ -1,0 +1,62 @@
+[
+  {
+    "caso": "Usuario nuevo (saludo)",
+    "telefono": "5215512345678",
+    "texto": "Hola, buenas tardes",
+    "http_webhook": 200,
+    "respuesta_webhook": {
+      "status": "received"
+    },
+    "ms_respuesta_webhook": 7,
+    "respuesta": "¡Hola! 👋 Bienvenido/a al Asistente de Estatus de Pedidos. Soy tu asistente virtual y te ayudo a consultar el estado de tus compras. Dime el número de pedido (ejemplo: PED-1001) y te doy la información al instante. 🌎",
+    "fuente": "saludo"
+  },
+  {
+    "caso": "Estatus con folio",
+    "telefono": "5215512345678",
+    "texto": "¿Cuál es el estatus de mi pedido PED-1002?",
+    "http_webhook": 200,
+    "respuesta_webhook": {
+      "status": "received"
+    },
+    "ms_respuesta_webhook": 4,
+    "respuesta": "📦 *PED-1002* — Mochila urbana waterproof 30L (x2)\nEstado: *En camino*\nEntrega estimada: 2026-10-30\nRastreo: MX-TRACK-771044 (Envíos Andes)\n¿Necesitas algo más sobre este pedido?",
+    "fuente": "catalogo"
+  },
+  {
+    "caso": "Estatus sin folio (regla)",
+    "telefono": "5215512345678",
+    "texto": "Oye, ¿ya llegó mi compra?",
+    "http_webhook": 200,
+    "respuesta_webhook": {
+      "status": "received"
+    },
+    "ms_respuesta_webhook": 3,
+    "respuesta": "Claro, con gusto te ayudo. 📦 ¿Me compartes el número de pedido? Se ve algo como PED-1001.",
+    "fuente": "regla"
+  },
+  {
+    "caso": "Pedido inexistente",
+    "telefono": "5215599998888",
+    "texto": "Revisa el pedido PED-9999 por favor",
+    "http_webhook": 200,
+    "respuesta_webhook": {
+      "status": "received"
+    },
+    "ms_respuesta_webhook": 4,
+    "respuesta": "No encuentro el pedido *PED-9999* en el sistema. 🤔 Revisa el número e inténtalo de nuevo, o escríbeme para ayuda.",
+    "fuente": "catalogo"
+  },
+  {
+    "caso": "Conversacion general (LLM)",
+    "telefono": "5215512345678",
+    "texto": "¿Puedo comprar sin pasar a la tienda?",
+    "http_webhook": 200,
+    "respuesta_webhook": {
+      "status": "received"
+    },
+    "ms_respuesta_webhook": 961,
+    "respuesta": "¡Sí, puedes realizar tu pedido directamente desde tu navegador! Solo tienes que seleccionar los productos y pagar con tarjeta o efectivo. 🛒✨",
+    "fuente": "llm"
+  }
+]
