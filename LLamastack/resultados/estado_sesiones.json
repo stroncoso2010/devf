@@ -1,0 +1,20 @@
+{
+  "total_sesiones": 2,
+  "max_items_historial": 8,
+  "sesiones": [
+    {
+      "telefono": "5215511110009",
+      "conversation_id": "conv_290e16fcf1dc55b15b2d0b6c3cb84dd2513277c1fc4a6c4d",
+      "turnos": 5,
+      "items_borrados": 2,
+      "creada_en": "2026-10-30 23:26:32"
+    },
+    {
+      "telefono": "5215522220001",
+      "conversation_id": "conv_87bcb807b546dadf73acef1532072f5953078e25ceac20af",
+      "turnos": 1,
+      "items_borrados": 0,
+      "creada_en": "2026-10-30 23:29:23"
+    }
+  ]
+}

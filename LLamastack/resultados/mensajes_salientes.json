@@ -1,0 +1,86 @@
+{
+  "phone_id": "LOCAL_1234567890",
+  "total": 8,
+  "mensajes": [
+    {
+      "wamid": "mock_wamid_0001",
+      "phone_id": "LOCAL_1234567890",
+      "to": "5215511110009",
+      "texto": "¡Hola! Con gusto te ayudamos a agendar la cita dental para Max. ¿Para qué día preferirías que fuera su consulta?",
+      "context": {
+        "message_id": "wamid.TEST001"
+      },
+      "recibido_en": "2026-10-30 23:27:00"
+    },
+    {
+      "wamid": "mock_wamid_0002",
+      "phone_id": "LOCAL_1234567890",
+      "to": "5215511110009",
+      "texto": "¡Perfecto! He registrado la cita dental para Max el martes. ¿Te gustaría que te asignemos una hora en particular o prefieres la más cercana disponible?",
+      "context": {
+        "message_id": "wamid.TEST002"
+      },
+      "recibido_en": "2026-10-30 23:27:41"
+    },
+    {
+      "wamid": "mock_wamid_0003",
+      "phone_id": "LOCAL_1234567890",
+      "to": "5215511110009",
+      "texto": "Déjame verificar la disponibilidad para las 10:00 am el martes. ¿Es esa la hora que prefieres para la cita de Max?",
+      "context": {
+        "message_id": "wamid.TEST003"
+      },
+      "recibido_en": "2026-10-30 23:28:22"
+    },
+    {
+      "wamid": "mock_wamid_0004",
+      "phone_id": "LOCAL_1234567890",
+      "to": "5215511110009",
+      "texto": "¡Listo! He agendado la cita dental de Max para el martes a las 10:00 am. ¡Gracias por confiar en Patitas Felices!",
+      "context": {
+        "message_id": "wamid.TEST004"
+      },
+      "recibido_en": "2026-10-30 23:28:55"
+    },
+    {
+      "wamid": "mock_wamid_0005",
+      "phone_id": "LOCAL_1234567890",
+      "to": "5215511110009",
+      "texto": "Solicitaste una cita dental para tu perrito Max. ¡Quedó programada para el martes a las 10:00 am!",
+      "context": {
+        "message_id": "wamid.TEST005"
+      },
+      "recibido_en": "2026-10-30 23:29:15"
+    },
+    {
+      "wamid": "mock_wamid_0006",
+      "phone_id": "LOCAL_1234567890",
+      "to": "5215511110009",
+      "texto": "Claro, te paso con una persona del equipo veterinario. 👩‍⚕️ Ya registré tu solicitud y te contactamos en breve por este mismo número.",
+      "context": {
+        "message_id": "wamid.TEST006"
+      },
+      "recibido_en": "2026-10-30 23:29:17"
+    },
+    {
+      "wamid": "mock_wamid_0007",
+      "phone_id": "LOCAL_1234567890",
+      "to": "5215511110009",
+      "texto": "🚨 Es una URGENCIA: tu mascota necesita atención inmediata. Llévala ahora mismo a la clínica más cercana; el equipo la atenderá de inmediato. No esperes respuesta por aquí.",
+      "context": {
+        "message_id": "wamid.TEST007"
+      },
+      "recibido_en": "2026-10-30 23:29:20"
+    },
+    {
+      "wamid": "mock_wamid_0008",
+      "phone_id": "LOCAL_1234567890",
+      "to": "5215522220001",
+      "texto": "¡Hola! Estaremos encantados de atender a tu gatita. \n¿Podrías decirme su nombre, qué servicio necesita y qué día prefieres para agendar la cita?",
+      "context": {
+        "message_id": "wamid.TEST008"
+      },
+      "recibido_en": "2026-10-30 23:29:54"
+    }
+  ]
+}

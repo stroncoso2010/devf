@@ -1,0 +1,180 @@
+[
+  {
+    "telefono": "5215511110009",
+    "mensaje": "Hola, quiero una cita dental para mi perrito Max",
+    "respuesta": "¡Hola! Con gusto te ayudamos a agendar la cita dental para Max. ¿Para qué día preferirías que fuera su consulta?",
+    "fuente": "llama-stack",
+    "regla": null,
+    "conversation_id": "conv_290e16fcf1dc55b15b2d0b6c3cb84dd2513277c1fc4a6c4d",
+    "response_id": "resp_23fd7e26-6b62-44f6-a7ec-13bfdca43718",
+    "items_antes": 0,
+    "items_despues": 2,
+    "recorte": {
+      "items_antes": 2,
+      "items_borrados": 0,
+      "items_despues": 2,
+      "max_items": 8
+    },
+    "turno": 1,
+    "latencia_ms": 27956,
+    "envio": {
+      "status": 200,
+      "body": "{\"messaging_product\":\"whatsapp\",\"messages\":[{\"id\":\"mock_wamid_0001\"}]}"
+    }
+  },
+  {
+    "telefono": "5215511110009",
+    "mensaje": "El martes me queda mejor",
+    "respuesta": "¡Perfecto! He registrado la cita dental para Max el martes. ¿Te gustaría que te asignemos una hora en particular o prefieres la más cercana disponible?",
+    "fuente": "llama-stack",
+    "regla": null,
+    "conversation_id": "conv_290e16fcf1dc55b15b2d0b6c3cb84dd2513277c1fc4a6c4d",
+    "response_id": "resp_12640779-bb06-4da4-a4d5-e3e46758611a",
+    "items_antes": 2,
+    "items_despues": 4,
+    "recorte": {
+      "items_antes": 4,
+      "items_borrados": 0,
+      "items_despues": 4,
+      "max_items": 8
+    },
+    "turno": 2,
+    "latencia_ms": 40817,
+    "envio": {
+      "status": 200,
+      "body": "{\"messaging_product\":\"whatsapp\",\"messages\":[{\"id\":\"mock_wamid_0002\"}]}"
+    }
+  },
+  {
+    "telefono": "5215511110009",
+    "mensaje": "Son las 10 de la manana?",
+    "respuesta": "Déjame verificar la disponibilidad para las 10:00 am el martes. ¿Es esa la hora que prefieres para la cita de Max?",
+    "fuente": "llama-stack",
+    "regla": null,
+    "conversation_id": "conv_290e16fcf1dc55b15b2d0b6c3cb84dd2513277c1fc4a6c4d",
+    "response_id": "resp_e9e09314-4b5d-4631-a8ba-b8ad4cbe98c2",
+    "items_antes": 4,
+    "items_despues": 6,
+    "recorte": {
+      "items_antes": 6,
+      "items_borrados": 0,
+      "items_despues": 6,
+      "max_items": 8
+    },
+    "turno": 3,
+    "latencia_ms": 40489,
+    "envio": {
+      "status": 200,
+      "body": "{\"messaging_product\":\"whatsapp\",\"messages\":[{\"id\":\"mock_wamid_0003\"}]}"
+    }
+  },
+  {
+    "telefono": "5215511110009",
+    "mensaje": "Perfecto, agendala",
+    "respuesta": "¡Listo! He agendado la cita dental de Max para el martes a las 10:00 am. ¡Gracias por confiar en Patitas Felices!",
+    "fuente": "llama-stack",
+    "regla": null,
+    "conversation_id": "conv_290e16fcf1dc55b15b2d0b6c3cb84dd2513277c1fc4a6c4d",
+    "response_id": "resp_7d5afa6f-d585-4e7c-986d-30f0f0178460",
+    "items_antes": 6,
+    "items_despues": 8,
+    "recorte": {
+      "items_antes": 8,
+      "items_borrados": 0,
+      "items_despues": 8,
+      "max_items": 8
+    },
+    "turno": 4,
+    "latencia_ms": 33741,
+    "envio": {
+      "status": 200,
+      "body": "{\"messaging_product\":\"whatsapp\",\"messages\":[{\"id\":\"mock_wamid_0004\"}]}"
+    }
+  },
+  {
+    "telefono": "5215511110009",
+    "mensaje": "Cual fue el servicio que pedi al inicio?",
+    "respuesta": "Solicitaste una cita dental para tu perrito Max. ¡Quedó programada para el martes a las 10:00 am!",
+    "fuente": "llama-stack",
+    "regla": null,
+    "conversation_id": "conv_290e16fcf1dc55b15b2d0b6c3cb84dd2513277c1fc4a6c4d",
+    "response_id": "resp_e9e5ab3a-f19e-4bac-96b2-22cc80e3284f",
+    "items_antes": 8,
+    "items_despues": 8,
+    "recorte": {
+      "items_antes": 10,
+      "items_borrados": 2,
+      "items_despues": 8,
+      "max_items": 8
+    },
+    "turno": 5,
+    "latencia_ms": 19342,
+    "envio": {
+      "status": 200,
+      "body": "{\"messaging_product\":\"whatsapp\",\"messages\":[{\"id\":\"mock_wamid_0005\"}]}"
+    }
+  },
+  {
+    "telefono": "5215511110009",
+    "mensaje": "Quiero hablar con una persona, por favor",
+    "respuesta": "Claro, te paso con una persona del equipo veterinario. 👩‍⚕️ Ya registré tu solicitud y te contactamos en breve por este mismo número.",
+    "fuente": "regla",
+    "regla": "escalado_humano",
+    "conversation_id": "conv_290e16fcf1dc55b15b2d0b6c3cb84dd2513277c1fc4a6c4d",
+    "items_antes": 8,
+    "items_despues": 8,
+    "recorte": {
+      "items_borrados": 0,
+      "motivo": "regla fija: no entra al modelo"
+    },
+    "latencia_ms": 27,
+    "response_id": null,
+    "envio": {
+      "status": 200,
+      "body": "{\"messaging_product\":\"whatsapp\",\"messages\":[{\"id\":\"mock_wamid_0006\"}]}"
+    }
+  },
+  {
+    "telefono": "5215511110009",
+    "mensaje": "Mi perrito esta sangrando mucho, es una urgencia!",
+    "respuesta": "🚨 Es una URGENCIA: tu mascota necesita atención inmediata. Llévala ahora mismo a la clínica más cercana; el equipo la atenderá de inmediato. No esperes respuesta por aquí.",
+    "fuente": "regla",
+    "regla": "urgencia_medica",
+    "conversation_id": "conv_290e16fcf1dc55b15b2d0b6c3cb84dd2513277c1fc4a6c4d",
+    "items_antes": 8,
+    "items_despues": 8,
+    "recorte": {
+      "items_borrados": 0,
+      "motivo": "regla fija: no entra al modelo"
+    },
+    "latencia_ms": 28,
+    "response_id": null,
+    "envio": {
+      "status": 200,
+      "body": "{\"messaging_product\":\"whatsapp\",\"messages\":[{\"id\":\"mock_wamid_0007\"}]}"
+    }
+  },
+  {
+    "telefono": "5215522220001",
+    "mensaje": "Hola, es para mi gata",
+    "respuesta": "¡Hola! Estaremos encantados de atender a tu gatita. \n¿Podrías decirme su nombre, qué servicio necesita y qué día prefieres para agendar la cita?",
+    "fuente": "llama-stack",
+    "regla": null,
+    "conversation_id": "conv_87bcb807b546dadf73acef1532072f5953078e25ceac20af",
+    "response_id": "resp_2d83dee1-75f6-476b-aa33-5214e59d9d83",
+    "items_antes": 0,
+    "items_despues": 2,
+    "recorte": {
+      "items_antes": 2,
+      "items_borrados": 0,
+      "items_despues": 2,
+      "max_items": 8
+    },
+    "turno": 1,
+    "latencia_ms": 30412,
+    "envio": {
+      "status": 200,
+      "body": "{\"messaging_product\":\"whatsapp\",\"messages\":[{\"id\":\"mock_wamid_0008\"}]}"
+    }
+  }
+]

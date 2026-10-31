@@ -1,0 +1,63 @@
+{
+  "servidor": {
+    "host": "127.0.0.1",
+    "puerto": 8020,
+    "titulo": "Agente de la Veterinaria - Llama Stack + Ollama"
+  },
+  "llama_stack": {
+    "base_url": "http://127.0.0.1:8321",
+    "modelo": "ollama/gemma4:12b",
+    "max_items_historial": 8,
+    "max_output_tokens": 220,
+    "temperatura": 0.3
+  },
+  "whatsapp": {
+    "token": "",
+    "phone_id": "LOCAL_1234567890",
+    "verify_token": "VET_2026",
+    "graph_api_base": "http://127.0.0.1:8890",
+    "graph_api_version": "v19.0"
+  },
+  "reglas": {
+    "escalado_humano": {
+      "mensaje": "Claro, te paso con una persona del equipo veterinario. 👩‍⚕️ Ya registré tu solicitud y te contactamos en breve por este mismo número.",
+      "patrones": [
+        "quiero hablar con",
+        "hablar con un humano",
+        "hablar con una persona",
+        "quiero un asesor",
+        "me quiero quejar",
+        "un ejecutivo",
+        "talk to a human"
+      ]
+    },
+    "urgencia_medica": {
+      "mensaje": "🚨 Es una URGENCIA: tu mascota necesita atención inmediata. Llévala ahora mismo a la clínica más cercana; el equipo la atenderá de inmediato. No esperes respuesta por aquí.",
+      "patrones": [
+        "urgencia",
+        "urgente",
+        "emergencia",
+        "no respira",
+        "no puede respirar",
+        "se desmaya",
+        "desmayo",
+        "sangra mucho",
+        "sangrando",
+        "se está desangrando",
+        "veneno",
+        "envenenó",
+        "atropellado",
+        "atropelló",
+        "se cayó",
+        "convulsiones",
+        "convulsiona",
+        "infarto",
+        "no responde"
+      ]
+    }
+  },
+  "agente": {
+    "instructions": "Eres el asistente de la clínica veterinaria \"Patitas Felices\". Atiendes consultas de mascotas, agendas citas y resuelves dudas de servicios.\nReglas de tono:\n- Responde en español, amable, en máximo 3 líneas.\n- Usa el historial de la conversación: no repitas preguntas ya respondidas ni pidas datos que el dueño ya dio.\n- Si piden hablar con una persona o hay una urgencia médica, el sistema deriva antes de responderte.\n- No inventes horarios, precios ni diagnósticos veterinarios.\n- Pide el nombre de la mascota, el servicio y el día preferido para agendar.",
+    "servicios": ["consulta general", "vacunacion", "desparasitacion", "peluqueria", "dental", "cirugia", "urgencia"]
+  }
+}
