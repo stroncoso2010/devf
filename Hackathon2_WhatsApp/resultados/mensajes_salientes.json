@@ -1,0 +1,76 @@
+{
+  "phone_id": "LOCAL_1234567890",
+  "total": 7,
+  "mensajes": [
+    {
+      "wamid": "mock_wamid_0001",
+      "phone_id": "LOCAL_1234567890",
+      "to": "5215511110015",
+      "texto": "¡Hola! Hoy tenemos pozole rojo ($145), enchiladas verdes con pollo ($135) y mole negro con arroz ($165). También contamos con entradas como sopa de fideo, quesadillas y guacamole.",
+      "context": {
+        "message_id": "wamid.TEST001"
+      },
+      "recibido_en": "2026-11-04 10:50:47"
+    },
+    {
+      "wamid": "mock_wamid_0002",
+      "phone_id": "LOCAL_1234567890",
+      "to": "5215511110015",
+      "texto": "¡Sí, tenemos mesas disponibles para ese día y hora! Contamos con opciones en el salón y en la terraza. ¿Te gustaría que realice la reserva?",
+      "context": {
+        "message_id": "wamid.TEST002"
+      },
+      "recibido_en": "2026-11-04 10:51:07"
+    },
+    {
+      "wamid": "mock_wamid_0003",
+      "phone_id": "LOCAL_1234567890",
+      "to": "5215511110015",
+      "texto": "¡Listo, Ana! Tu reserva ha sido confirmada con el ID R-101 para el 2026-11-06 a las 20:00 en la mesa M4. ¡Te esperamos!",
+      "context": {
+        "message_id": "wamid.TEST003"
+      },
+      "recibido_en": "2026-11-04 10:51:31"
+    },
+    {
+      "wamid": "mock_wamid_0004",
+      "phone_id": "LOCAL_1234567890",
+      "to": "5215511110015",
+      "texto": "🚨 Lo sentimos mucho: tratamos este caso como emergencia. Un responsable del restaurante te contactará en minutos; si el comensal requiere atención médica, llévalo de inmediato y conserva el comprobante, nosotros cubrimos los gastos derivados de la comida.",
+      "context": {
+        "message_id": "wamid.TEST004"
+      },
+      "recibido_en": "2026-11-04 10:51:33"
+    },
+    {
+      "wamid": "mock_wamid_0005",
+      "phone_id": "LOCAL_1234567890",
+      "to": "5215511110015",
+      "texto": "Claro, te paso con el gerente del restaurante. Ya registré tu solicitud y te contactamos por este mismo número en breve.",
+      "context": {
+        "message_id": "wamid.TEST005"
+      },
+      "recibido_en": "2026-11-04 10:51:36"
+    },
+    {
+      "wamid": "mock_wamid_0006",
+      "phone_id": "LOCAL_1234567890",
+      "to": "5215511110015",
+      "texto": "Esa petición está fuera de mi alcance. Puedo ayudarte con reservas de mesa, menú, horarios y dudas del restaurante.",
+      "context": {
+        "message_id": "wamid.TEST006"
+      },
+      "recibido_en": "2026-11-04 10:51:39"
+    },
+    {
+      "wamid": "mock_wamid_0007",
+      "phone_id": "LOCAL_1234567890",
+      "to": "5215511110015",
+      "texto": "El domingo abrimos de 13:00 a 17:00. ¡Te esperamos!",
+      "context": {
+        "message_id": "wamid.TEST007"
+      },
+      "recibido_en": "2026-11-04 10:51:55"
+    }
+  ]
+}

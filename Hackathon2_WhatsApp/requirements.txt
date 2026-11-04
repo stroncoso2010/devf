@@ -1,0 +1,11 @@
+# Dependencias del Agente de Restaurante (Python 3.12)
+# Llama Stack fijado a la version probada (0.7.3 / cliente 0.7.5)
+llama-stack==0.7.3
+llama-stack-client==0.7.5
+mcp<1.13
+pydantic<2.12
+
+# Webhook de WhatsApp
+fastapi>=0.110
+uvicorn[standard]>=0.29
+requests>=2.31

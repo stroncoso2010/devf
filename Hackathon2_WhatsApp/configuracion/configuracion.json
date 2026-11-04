@@ -1,0 +1,84 @@
+{
+  "servidor": {
+    "host": "127.0.0.1",
+    "puerto": 8040,
+    "titulo": "Hackathon 2 - Agente de WhatsApp para restaurante (reservas + FAQ)"
+  },
+  "llama_stack": {
+    "base_url": "http://127.0.0.1:8321",
+    "modelo": "ollama/gemma4:12b",
+    "max_items_historial": 8,
+    "max_output_tokens": 240,
+    "temperatura": 0.3,
+    "timeout_herramienta_ms": 3000,
+    "timeout_modelo_ms": 90000
+  },
+  "whatsapp": {
+    "token": "",
+    "phone_id": "LOCAL_1234567890",
+    "verify_token": "RESTAURANTE_2026",
+    "graph_api_base": "http://127.0.0.1:8890",
+    "graph_api_version": "v19.0"
+  },
+  "seguridad": {
+    "max_caracteres_entrada": 600,
+    "max_caracteres_salida": 1200,
+    "llama_guard_modelo": null,
+    "llama_guard_url": "http://127.0.0.1:11434",
+    "patrones_bloqueo": [
+      "ignora (todas )?las instrucciones",
+      "ignora todas tus instrucciones",
+      "ignora tus instrucciones",
+      "ignora lo anterior",
+      "olvida lo que te dijeron",
+      "olvida tus instrucciones",
+      "instrucciones del sistema",
+      "prompt del sistema",
+      "system prompt",
+      "modo developer",
+      "modo dios",
+      "jailbreak",
+      "actua como otro",
+      "eres otro asistente",
+      "no eres un asistente",
+      "mata a",
+      "como matar",
+      "arma para",
+      "drogas ilegales",
+      "suicid",
+      "haz lo que te diga sin preguntar"
+    ],
+    "respuesta_bloqueo": "Esa petición está fuera de mi alcance. Puedo ayudarte con reservas de mesa, menú, horarios y dudas del restaurante."
+  },
+  "reglas": {
+    "urgencia_salud": {
+      "mensaje": "🚨 Lo sentimos mucho: tratamos este caso como emergencia. Un responsable del restaurante te contactará en minutos; si el comensal requiere atención médica, llévalo de inmediato y conserva el comprobante, nosotros cubrimos los gastos derivados de la comida.",
+      "patrones": [
+        "intoxicacion",
+        "intoxicación",
+        "me enferme",
+        "me enfermé",
+        "envenenad",
+        "alergia severa",
+        "anafilaxia",
+        "me dio dolor de estomago despues de comer",
+        "salimos enfermos"
+      ]
+    },
+    "escalado_humano": {
+      "mensaje": "Claro, te paso con el gerente del restaurante. Ya registré tu solicitud y te contactamos por este mismo número en breve.",
+      "patrones": [
+        "hablar con el gerente",
+        "quiero hablar con",
+        "hablar con una persona",
+        "hablar con el dueno",
+        "hablar con la dueña",
+        "me quiero quejar",
+        "un responsable"
+      ]
+    }
+  },
+  "agente": {
+    "instructions": "Eres el asistente de WhatsApp de 'La Cocina de Doña Carmen', un restaurante de comida casera en Guadalajara. Ayudas con reservas de mesa, menú, horarios y dudas frecuentes.\nHoy es 2026-11-04 (miércoles): calcula fechas relativas (mañana, el viernes, este fin de semana) contra esa fecha y usa siempre formato YYYY-MM-DD al llamar a las herramientas.\nReglas:\n- Responde en español, amable, máximo 3 líneas.\n- Usa el historial de la conversación: no pidas datos que el cliente ya dio ni repitas lo ya respondido.\n- Para saber si hay mesa usa consultar_disponibilidad; para apartar usa agendar_reserva; nunca inventes disponibilidad ni inventes un id de reserva.\n- Para dudas generales (menú, horarios, alergenos, ubicación, estacionamiento, pagos) usa buscar_pregunta_frecuente antes de responder.\n- Si el cliente confirma una reserva anterior, recupera fecha, hora y personas de la conversación.\n- Si falta un dato obligatorio de la reserva (fecha, hora o personas), pídelo una sola vez antes de llamar a agendar_reserva.\n- Solo menciona datos que te devolvió una herramienta o que dio el cliente."
+  }
+}

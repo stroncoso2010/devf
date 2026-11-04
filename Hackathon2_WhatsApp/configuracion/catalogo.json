@@ -1,0 +1,85 @@
+{
+  "restaurante": {
+    "nombre": "La Cocina de Doña Carmen",
+    "tipo": "Comida casera mexicana",
+    "direccion": "Av. Reforma 214, Col. Centro, Guadalajara, Jalisco",
+    "telefono": "33 1234 5678",
+    "capacidad_total": 32,
+    "politica_reserva": "La mesa se reserva 15 minutos; pasado ese tiempo se libera. Grupos de más de 8 personas requieren evento previo."
+  },
+  "mesas": [
+    { "id": "M1", "capacidad": 2, "zona": "jardin" },
+    { "id": "M2", "capacidad": 2, "zona": "jardin" },
+    { "id": "M3", "capacidad": 4, "zona": "salon" },
+    { "id": "M4", "capacidad": 4, "zona": "salon" },
+    { "id": "M5", "capacidad": 4, "zona": "terraza" },
+    { "id": "M6", "capacidad": 6, "zona": "salon" },
+    { "id": "M7", "capacidad": 2, "zona": "barra" },
+    { "id": "M8", "capacidad": 8, "zona": "privado" }
+  ],
+  "horas": {
+    "almuerzo": ["13:00", "13:30", "14:00", "14:30", "15:00"],
+    "cena": ["19:00", "19:30", "20:00", "20:30", "21:00", "21:30"]
+  },
+  "dias_cerrado": [0, 2],
+  "ocupacion_previa": {
+    "2026-11-05": { "19:00": ["M4"], "20:00": ["M4", "M1"], "21:00": ["M6"] },
+    "2026-11-06": { "19:00": ["M3", "M6"], "20:00": ["M3"], "21:00": [] },
+    "2026-11-07": { "13:00": ["M8"], "20:00": ["M6"], "21:00": ["M5"] }
+  },
+  "menu": {
+    "del_dia": [
+      { "plato": "Pozole rojo con tostadas", "precio": 145 },
+      { "plato": "Enchiladas verdes con pollo", "precio": 135 },
+      { "plato": "Mole negro con arroz", "precio": 165 }
+    ],
+    "entradas": [
+      { "plato": "Sopa de fideo", "precio": 65 },
+      { "plato": "Quesadillas de flor de calabaza (4 pzas)", "precio": 85 },
+      { "plato": "Guacamole con totopos", "precio": 95 }
+    ],
+    "bebidas": [
+      { "plato": "Agua fresca del día (1 L)", "precio": 55 },
+      { "plato": "Café de olla", "precio": 45 },
+      { "plato": "Michelada preparada", "precio": 75 }
+    ],
+    "postres": [
+      { "plato": "Flan napolitano", "precio": 65 },
+      { "plato": "Arroz con leche", "precio": 55 }
+    ]
+  },
+  "preguntas_frecuentes": {
+    "menu": {
+      "pregunta": "¿Qué hay en el menú?",
+      "respuesta": "Del día: pozole rojo con tostadas ($145), enchiladas verdes con pollo ($135) y mole negro con arroz ($165). También hay entradas como sopa de fideo ($65), quesadillas de flor de calabaza ($85) y guacamole ($95), aguas frescas, café de olla y postres (flan $65)."
+    },
+    "horarios": {
+      "pregunta": "¿Cuáles son los horarios?",
+      "respuesta": "Abrimos de miércoles a domingo: de 13:00 a 16:00 y de 19:00 a 23:00 (sábado hasta las 23:30 y domingo solo de 13:00 a 17:00). Los lunes y martes cerramos."
+    },
+    "ubicacion": {
+      "pregunta": "¿Dónde están?",
+      "respuesta": "Estamos en Av. Reforma 214, Col. Centro, Guadalajara, Jalisco, a dos cuadras del monumento a la Minerva."
+    },
+    "alergenos": {
+      "pregunta": "¿Qué alérgenos tienen?",
+      "respuesta": "Marcamos en la carta los alérgenos: lácteos, gluten, frutos secos, camarón y pimienta chile. El mole lleva almendra y el guacamole chile; avísanos de cualquier alergia y la cocina adapta el plato."
+    },
+    "reservas": {
+      "pregunta": "¿Cómo funcionan las reservas?",
+      "respuesta": "La reserva se hace por WhatsApp con fecha, hora y número de personas; te confirmamos el id de reserva al instante. La mesa se reserva 15 minutos y después se libera. Grupos de más de 8 requieren evento previo."
+    },
+    "estacionamiento": {
+      "pregunta": "¿Hay estacionamiento?",
+      "respuesta": "Sí, tenemos estacionamiento propio gratuito para 10 autos; si se llena, hay valet parking los viernes y sábados."
+    },
+    "pagos": {
+      "pregunta": "¿Qué formas de pago aceptan?",
+      "respuesta": "Aceptamos efectivo, tarjeta de crédito y débito (Visa, Mastercard, Amex), transferencia SPEI y QR. A partir de $1,500 se acepta solo transferencia o efectivo."
+    },
+    "grupos": {
+      "pregunta": "¿Puedo llevar un grupo grande?",
+      "respuesta": "Sí: la mesa M8 del área privada acomoda hasta 8 personas y el salón completo hasta 32. Para grupos de más de 8 agenda un evento previo con el gerente."
+    }
+  }
+}

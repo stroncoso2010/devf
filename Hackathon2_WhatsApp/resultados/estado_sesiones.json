@@ -1,0 +1,13 @@
+{
+  "total_sesiones": 1,
+  "max_items_historial": 8,
+  "sesiones": [
+    {
+      "telefono": "5215511110015",
+      "conversation_id": "conv_31479d9f9a8ada6b4ae9119029608cb1313493a405ced44c",
+      "turnos": 4,
+      "items_borrados": 16,
+      "creada_en": "2026-11-04 10:49:48"
+    }
+  ]
+}

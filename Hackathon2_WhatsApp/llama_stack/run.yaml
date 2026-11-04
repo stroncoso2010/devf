@@ -1,0 +1,120 @@
+# =============================================================================
+# Llama Stack con Ollama del PC como proveedor de inferencia.
+# Formato de llama-stack 0.7.3 (providers por API).
+#
+# Arranque:
+#   .venv\Scripts\llama.exe stack run llama_stack\run.yaml --port 8321
+#
+# La API de conversaciones (client.conversations) es la que mantiene la
+# memoria de la sesion por numero de telefono.
+# =============================================================================
+
+version: 2
+image_name: veterinary-agent
+
+apis:
+  - inference
+  - responses
+  - vector_io
+  - tool_runtime
+  - files
+
+providers:
+  # --- Inferencia: Ollama local ---
+  inference:
+    - provider_id: ollama
+      provider_type: remote::ollama
+      config:
+        base_url: http://127.0.0.1:11434/v1
+
+  # --- Vector store: sqlite-vec (lo exige el proveedor builtin de responses) ---
+  vector_io:
+    - provider_id: sqlite-vec
+      provider_type: inline::sqlite-vec
+      config:
+        db_path: llama_stack/data/sqlite_vec.db
+        persistence:
+          namespace: vector_io::sqlite_vec
+          backend: kv_default
+
+  # --- Tool runtime: busqueda en archivos (lo exige builtin de responses) ---
+  tool_runtime:
+    - provider_id: file-search
+      provider_type: inline::file-search
+
+  # --- Files: almacenamiento local (lo exige file-search) ---
+  files:
+    - provider_id: builtin-files
+      provider_type: inline::localfs
+      config:
+        storage_dir: llama_stack/data/files
+        metadata_store:
+          table_name: files_metadata
+          backend: sql_default
+
+  # --- Responses: implementacion interna que sirve /v1/conversations ---
+  responses:
+    - provider_id: builtin
+      provider_type: inline::builtin
+      config:
+        persistence:
+          agent_state:
+            namespace: agents
+            backend: kv_default
+          responses:
+            table_name: responses
+            backend: sql_default
+        max_write_queue_size: 10000
+        num_writers: 4
+
+storage:
+  backends:
+    kv_default:
+      type: kv_sqlite
+      db_path: llama_stack/data/kvstore.db
+    sql_default:
+      type: sql_sqlite
+      db_path: llama_stack/data/sql_store.db
+  stores:
+    metadata:
+      namespace: registry
+      backend: kv_default
+    inference:
+      table_name: inference_store
+      backend: sql_default
+      max_write_queue_size: 10000
+      num_writers: 4
+    conversations:
+      table_name: openai_conversations
+      backend: sql_default
+    prompts:
+      namespace: prompts
+      backend: kv_default
+    connectors:
+      namespace: connectors
+      backend: kv_default
+
+registered_resources:
+  models:
+    - model_id: gemma4:12b
+      provider_id: ollama
+      provider_model_id: gemma4:12b
+      model_type: llm
+      metadata:
+        llama_model:
+          model: gemma4:12b
+    - model_id: qwen3.5:0.8b
+      provider_id: ollama
+      provider_model_id: qwen3.5:0.8b
+      model_type: llm
+      metadata:
+        llama_model:
+          model: qwen3.5:0.8b
+  shields: []
+  vector_stores: []
+  datasets: []
+  scoring_fns: []
+  benchmarks: []
+
+server:
+  port: 8321
