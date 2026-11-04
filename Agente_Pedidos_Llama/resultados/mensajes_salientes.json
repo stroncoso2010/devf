@@ -1,0 +1,66 @@
+{
+  "phone_id": "LOCAL_1234567890",
+  "total": 6,
+  "mensajes": [
+    {
+      "wamid": "mock_wamid_0001",
+      "phone_id": "LOCAL_1234567890",
+      "to": "5215511110009",
+      "texto": "Aceptamos tarjetas de crédito y débito (Visa, Mastercard, Amex), transferencia SPEI y PayPal. El pago se cobra al momento de confirmar tu pedido.",
+      "context": {
+        "message_id": "wamid.TEST001"
+      },
+      "recibido_en": "2026-11-03 17:54:24"
+    },
+    {
+      "wamid": "mock_wamid_0002",
+      "phone_id": "LOCAL_1234567890",
+      "to": "5215511110009",
+      "texto": "🚨 Duplicado detectado: revisamos ese cargo de inmediato. No vuelvas a intentar el pago; un agente verificará el cobro y, si procede, se reversará en 24–48 h. Te confirmamos por este mismo número.",
+      "context": {
+        "message_id": "wamid.TEST002"
+      },
+      "recibido_en": "2026-11-03 17:54:26"
+    },
+    {
+      "wamid": "mock_wamid_0003",
+      "phone_id": "LOCAL_1234567890",
+      "to": "5215511110009",
+      "texto": "Claro, te paso con una persona del equipo de atención. Ya registré tu solicitud y te contactamos en breve por este mismo número.",
+      "context": {
+        "message_id": "wamid.TEST003"
+      },
+      "recibido_en": "2026-11-03 17:54:29"
+    },
+    {
+      "wamid": "mock_wamid_0004",
+      "phone_id": "LOCAL_1234567890",
+      "to": "5215511110009",
+      "texto": "Tu pedido 9988 está en tránsito con Estafeta (guía: 7123456789).\nLa fecha estimada de entrega es el 05/11/2026.\nÚltimo movimiento: Paquete en centro de distribución Guadalajara el 01/11/2026.",
+      "context": {
+        "message_id": "wamid.TEST004"
+      },
+      "recibido_en": "2026-11-03 17:55:01"
+    },
+    {
+      "wamid": "mock_wamid_0005",
+      "phone_id": "LOCAL_1234567890",
+      "to": "5215511110009",
+      "texto": "Tu pedido tiene una fecha estimada de entrega para el 05/11/2026.",
+      "context": {
+        "message_id": "wamid.TEST005"
+      },
+      "recibido_en": "2026-11-03 17:55:15"
+    },
+    {
+      "wamid": "mock_wamid_0006",
+      "phone_id": "LOCAL_1234567890",
+      "to": "5215511110009",
+      "texto": "Lo siento, pero no encontramos el pedido 123456 en nuestro sistema. Por favor, verifica que el número sea correcto e inténtalo de nuevo.",
+      "context": {
+        "message_id": "wamid.TEST006"
+      },
+      "recibido_en": "2026-11-03 17:55:40"
+    }
+  ]
+}

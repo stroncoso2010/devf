@@ -1,0 +1,189 @@
+[
+  {
+    "telefono": "5215511110009",
+    "mensaje": "Hola, ¿qué formas de pago aceptan?",
+    "respuesta": "Aceptamos tarjetas de crédito y débito (Visa, Mastercard, Amex), transferencia SPEI y PayPal. El pago se cobra al momento de confirmar tu pedido.",
+    "fuente": "llama-stack",
+    "regla": null,
+    "conversation_id": "conv_66c8fc95e4edd37e7e0623f8d1c7637ab0ef9f4ce93d8f1f",
+    "response_id": "resp_85496b5c-69dd-4308-8d7c-035196250ed2",
+    "items_antes": 0,
+    "items_despues": 6,
+    "recorte": {
+      "items_antes": 6,
+      "items_borrados": 0,
+      "items_despues": 6,
+      "max_items": 8
+    },
+    "herramientas_llamadas": [
+      {
+        "nombre": "buscar_pregunta_frecuente",
+        "argumentos": "{\"tema\":\"pagos\"}",
+        "ok": true,
+        "duracion_ms": 0
+      }
+    ],
+    "error": null,
+    "fases_ms": {
+      "razonamiento": 64972,
+      "accion": 0
+    },
+    "turno": 1,
+    "latencia_ms": 65027,
+    "envio": {
+      "status": 200,
+      "body": "{\"messaging_product\":\"whatsapp\",\"messages\":[{\"id\":\"mock_wamid_0001\"}]}"
+    }
+  },
+  {
+    "telefono": "5215511110009",
+    "mensaje": "Me cobraron dos veces el pedido, hay un cargo duplicado!",
+    "respuesta": "🚨 Duplicado detectado: revisamos ese cargo de inmediato. No vuelvas a intentar el pago; un agente verificará el cobro y, si procede, se reversará en 24–48 h. Te confirmamos por este mismo número.",
+    "fuente": "regla",
+    "regla": "urgencia_fraude",
+    "conversation_id": "conv_66c8fc95e4edd37e7e0623f8d1c7637ab0ef9f4ce93d8f1f",
+    "items_antes": 6,
+    "items_despues": 6,
+    "recorte": {
+      "items_borrados": 0,
+      "motivo": "regla fija: no entra al modelo"
+    },
+    "herramientas_llamadas": [],
+    "fases_ms": {
+      "razonamiento": 0,
+      "accion": 0
+    },
+    "latencia_ms": 30,
+    "response_id": null,
+    "envio": {
+      "status": 200,
+      "body": "{\"messaging_product\":\"whatsapp\",\"messages\":[{\"id\":\"mock_wamid_0002\"}]}"
+    }
+  },
+  {
+    "telefono": "5215511110009",
+    "mensaje": "Quiero hablar con una persona, por favor",
+    "respuesta": "Claro, te paso con una persona del equipo de atención. Ya registré tu solicitud y te contactamos en breve por este mismo número.",
+    "fuente": "regla",
+    "regla": "escalado_humano",
+    "conversation_id": "conv_66c8fc95e4edd37e7e0623f8d1c7637ab0ef9f4ce93d8f1f",
+    "items_antes": 6,
+    "items_despues": 6,
+    "recorte": {
+      "items_borrados": 0,
+      "motivo": "regla fija: no entra al modelo"
+    },
+    "herramientas_llamadas": [],
+    "fases_ms": {
+      "razonamiento": 0,
+      "accion": 0
+    },
+    "latencia_ms": 26,
+    "response_id": null,
+    "envio": {
+      "status": 200,
+      "body": "{\"messaging_product\":\"whatsapp\",\"messages\":[{\"id\":\"mock_wamid_0003\"}]}"
+    }
+  },
+  {
+    "telefono": "5215511110009",
+    "mensaje": "¿Dónde está mi pedido 9988?",
+    "respuesta": "Tu pedido 9988 está en tránsito con Estafeta (guía: 7123456789).\nLa fecha estimada de entrega es el 05/11/2026.\nÚltimo movimiento: Paquete en centro de distribución Guadalajara el 01/11/2026.",
+    "fuente": "llama-stack",
+    "regla": null,
+    "conversation_id": "conv_66c8fc95e4edd37e7e0623f8d1c7637ab0ef9f4ce93d8f1f",
+    "response_id": "resp_c99a7b39-ccdf-4db0-83b4-7698473020c1",
+    "items_antes": 6,
+    "items_despues": 8,
+    "recorte": {
+      "items_antes": 12,
+      "items_borrados": 4,
+      "items_despues": 8,
+      "max_items": 8
+    },
+    "herramientas_llamadas": [
+      {
+        "nombre": "consultar_pedido",
+        "argumentos": "{\"numero_pedido\":9988}",
+        "ok": true,
+        "duracion_ms": 0
+      }
+    ],
+    "error": null,
+    "fases_ms": {
+      "razonamiento": 28499,
+      "accion": 0
+    },
+    "turno": 2,
+    "latencia_ms": 28590,
+    "envio": {
+      "status": 200,
+      "body": "{\"messaging_product\":\"whatsapp\",\"messages\":[{\"id\":\"mock_wamid_0004\"}]}"
+    }
+  },
+  {
+    "telefono": "5215511110009",
+    "mensaje": "¿Y en qué fecha llega?",
+    "respuesta": "Tu pedido tiene una fecha estimada de entrega para el 05/11/2026.",
+    "fuente": "llama-stack",
+    "regla": null,
+    "conversation_id": "conv_66c8fc95e4edd37e7e0623f8d1c7637ab0ef9f4ce93d8f1f",
+    "response_id": "resp_a7e49c8a-0b3d-47ba-9097-a3f0d72503df",
+    "items_antes": 8,
+    "items_despues": 8,
+    "recorte": {
+      "items_antes": 10,
+      "items_borrados": 2,
+      "items_despues": 8,
+      "max_items": 8
+    },
+    "herramientas_llamadas": [],
+    "error": null,
+    "fases_ms": {
+      "razonamiento": 12507,
+      "accion": 0
+    },
+    "turno": 3,
+    "latencia_ms": 12570,
+    "envio": {
+      "status": 200,
+      "body": "{\"messaging_product\":\"whatsapp\",\"messages\":[{\"id\":\"mock_wamid_0005\"}]}"
+    }
+  },
+  {
+    "telefono": "5215511110009",
+    "mensaje": "Necesito el status del pedido 123456",
+    "respuesta": "Lo siento, pero no encontramos el pedido 123456 en nuestro sistema. Por favor, verifica que el número sea correcto e inténtalo de nuevo.",
+    "fuente": "llama-stack",
+    "regla": null,
+    "conversation_id": "conv_66c8fc95e4edd37e7e0623f8d1c7637ab0ef9f4ce93d8f1f",
+    "response_id": "resp_3b5bdc1d-b121-4410-a01c-8b8b3ce6d783",
+    "items_antes": 8,
+    "items_despues": 8,
+    "recorte": {
+      "items_antes": 14,
+      "items_borrados": 6,
+      "items_despues": 8,
+      "max_items": 8
+    },
+    "herramientas_llamadas": [
+      {
+        "nombre": "consultar_pedido",
+        "argumentos": "{\"numero_pedido\":123456}",
+        "ok": false,
+        "duracion_ms": 0
+      }
+    ],
+    "error": null,
+    "fases_ms": {
+      "razonamiento": 22482,
+      "accion": 0
+    },
+    "turno": 4,
+    "latencia_ms": 22596,
+    "envio": {
+      "status": 200,
+      "body": "{\"messaging_product\":\"whatsapp\",\"messages\":[{\"id\":\"mock_wamid_0006\"}]}"
+    }
+  }
+]

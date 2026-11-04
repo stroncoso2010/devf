@@ -1,0 +1,95 @@
+{
+  "pedidos": {
+    "9988": {
+      "numero_pedido": 9988,
+      "cliente": "María González",
+      "estado": "en_tránsito",
+      "transportista": "Estafeta",
+      "guia": "7123456789",
+      "fecha_pedido": "2026-10-28",
+      "fecha_estimada": "2026-11-05",
+      "ultimo_movimiento": "2026-11-01: paquete en centro de distribución Guadalajara",
+      "total": 1249.0,
+      "moneda": "MXN",
+      "pagado": true
+    },
+    "4521": {
+      "numero_pedido": 4521,
+      "cliente": "Carlos Ramírez",
+      "estado": "entregado",
+      "transportista": "DHL",
+      "guia": "9988776655",
+      "fecha_pedido": "2026-10-20",
+      "fecha_estimada": "2026-10-28",
+      "ultimo_movimiento": "2026-10-28: entregado en recepción (firmó: C. Ramírez)",
+      "total": 599.0,
+      "moneda": "MXN",
+      "pagado": true
+    },
+    "7710": {
+      "numero_pedido": 7710,
+      "cliente": "Lucía Torres",
+      "estado": "pendiente_de_pago",
+      "transportista": null,
+      "guia": null,
+      "fecha_pedido": "2026-11-02",
+      "fecha_estimada": null,
+      "ultimo_movimiento": "2026-11-02: pedido creado, esperando confirmación de pago",
+      "total": 2150.5,
+      "moneda": "MXN",
+      "pagado": false
+    },
+    "1204": {
+      "numero_pedido": 1204,
+      "cliente": "Jorge Medina",
+      "estado": "en_tránsito",
+      "transportista": "Paquetexpress",
+      "guia": "5544332211",
+      "fecha_pedido": "2026-10-30",
+      "fecha_estimada": "2026-11-06",
+      "ultimo_movimiento": "2026-11-02: paquete en ruta a destino",
+      "total": 899.9,
+      "moneda": "MXN",
+      "pagado": true
+    },
+    "3355": {
+      "numero_pedido": 3355,
+      "cliente": "Ana Delgado",
+      "estado": "devuelto",
+      "transportista": "Estafeta",
+      "guia": "1122334455",
+      "fecha_pedido": "2026-10-10",
+      "fecha_estimada": "2026-10-18",
+      "ultimo_movimiento": "2026-10-25: devolución recibida en almacén, reembolso en proceso",
+      "total": 450.0,
+      "moneda": "MXN",
+      "pagado": true
+    }
+  },
+  "preguntas_frecuentes": {
+    "horarios": {
+      "pregunta": "¿Cuáles son sus horarios de atención?",
+      "respuesta": "Atendemos por chat de lunes a viernes de 9:00 a 18:00 h y sábados de 10:00 a 14:00 h (hora del centro de México)."
+    },
+    "garantia": {
+      "pregunta": "¿Qué garantía tienen los productos?",
+      "respuesta": "Todos los productos tienen 12 meses de garantía por defecto de fabricación; algunos artículos electrónicos extienden a 24 meses. La garantía cubre defectos, no daños por mal uso."
+    },
+    "pagos": {
+      "pregunta": "¿Qué formas de pago aceptan?",
+      "respuesta": "Aceptamos tarjeta de crédito y débito (Visa, Mastercard, Amex), transferencia SPEI y PayPal. El pago se cobra al momento de confirmar el pedido."
+    },
+    "envios": {
+      "pregunta": "¿Cuánto tarda el envío?",
+      "respuesta": "Envíos a todo México en 3 a 7 días hábiles según la ciudad. Pedidos antes de las 14:00 h se despachan el mismo día."
+    },
+    "devoluciones": {
+      "pregunta": "¿Cómo hago una devolución?",
+      "respuesta": "Tienes 30 días naturales desde la entrega para solicitar devolución desde tu cuenta, sección Mis pedidos. Una vez aprobada, recogemos el paquete sin costo."
+    },
+    "seguimiento": {
+      "pregunta": "¿Cómo rastreo mi paquete?",
+      "respuesta": "Con tu número de pedido te compartimos la guía del transportista; también llega automáticamente por correo al despacharse."
+    }
+  }
+}

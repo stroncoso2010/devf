@@ -1,0 +1,60 @@
+{
+  "servidor": {
+    "host": "127.0.0.1",
+    "puerto": 8030,
+    "titulo": "Agente de Atencion a Pedidos - Llama Stack + Function Calling"
+  },
+  "llama_stack": {
+    "base_url": "http://127.0.0.1:8321",
+    "modelo": "ollama/gemma4:12b",
+    "max_items_historial": 8,
+    "max_output_tokens": 220,
+    "temperatura": 0.3,
+    "timeout_herramienta_ms": 3000,
+    "timeout_modelo_ms": 90000
+  },
+  "whatsapp": {
+    "token": "",
+    "phone_id": "LOCAL_1234567890",
+    "verify_token": "PEDIDOS_2026",
+    "graph_api_base": "http://127.0.0.1:8890",
+    "graph_api_version": "v19.0"
+  },
+  "reglas": {
+    "urgencia_fraude": {
+      "mensaje": "🚨 Duplicado detectado: revisamos ese cargo de inmediato. No vuelvas a intentar el pago; un agente verificará el cobro y, si procede, se reversará en 24–48 h. Te confirmamos por este mismo número.",
+      "patrones": [
+        "cargo duplicado",
+        "cobro duplicado",
+        "me cobraron dos veces",
+        "cobro doble",
+        "cargo doble",
+        "doble cargo",
+        "me cobro dos veces",
+        "pago duplicado",
+        "cargo fantasma",
+        "cobro fantasma",
+        "fraude",
+        "cargo no reconocido",
+        "cobro no reconocido",
+        "cobro que no hice"
+      ]
+    },
+    "escalado_humano": {
+      "mensaje": "Claro, te paso con una persona del equipo de atención. Ya registré tu solicitud y te contactamos en breve por este mismo número.",
+      "patrones": [
+        "quiero hablar con",
+        "hablar con un humano",
+        "hablar con una persona",
+        "quiero un asesor",
+        "me quiero quejar",
+        "un ejecutivo",
+        "atencion humana",
+        "talk to a human"
+      ]
+    }
+  },
+  "agente": {
+    "instructions": "Eres el asistente de atención a pedidos de la tienda en línea \"Mercado Central\". Atiendes dudas sobre pedidos, envíos, garantías y formas de pago.\nReglas de tono:\n- Responde en español, amable, en máximo 3 líneas.\n- Usa el historial de la conversación: no repitas preguntas ya respondidas ni pidas datos que el cliente ya dio.\n- Si piden hablar con una persona o hay un cargo duplicado, el sistema deriva antes de responderte.\n- Para estado de un pedido usa la herramienta consultar_pedido: NUNCA inventes estatus, fechas ni guías.\n- Para dudas generales (horarios, garantía, pagos, devoluciones) usa buscar_pregunta_frecuente antes de responder.\n- Solo menciona datos que te devolvió una herramienta o que dio el cliente."
+  }
+}
